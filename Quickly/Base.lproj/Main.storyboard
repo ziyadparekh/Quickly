@@ -1,25 +1,127 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cA9-24-Fnp">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Login View Controller-->
+        <scene sceneID="0u3-Ld-cUq">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="Muu-40-CaL" customClass="ZPLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="WA2-68-lYw"/>
+                        <viewControllerLayoutGuide type="bottom" id="5OP-a2-qpQ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="vqt-8g-zpD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIp-cJ-ayT">
+                                <rect key="frame" x="188" y="515" width="225" height="45"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.39607843139999999" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="Ic8-bv-N5K"/>
+                                    <constraint firstAttribute="height" constant="45" id="TKB-mn-yXu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="tintColor" red="0.30980392156862746" green="0.396078431372549" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Login with Facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBound" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="Muu-40-CaL" eventType="touchUpInside" id="y8H-0r-aKr"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="RCM-1y-5t1">
+                                <rect key="frame" x="290" y="485" width="20" height="20"/>
+                                <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="RCM-1y-5t1" secondAttribute="centerX" id="GoC-Iz-rrT"/>
+                            <constraint firstItem="5OP-a2-qpQ" firstAttribute="top" secondItem="SIp-cJ-ayT" secondAttribute="bottom" constant="40" id="I2H-af-6Rt"/>
+                            <constraint firstAttribute="centerX" secondItem="SIp-cJ-ayT" secondAttribute="centerX" id="eyC-jo-Lz9"/>
+                            <constraint firstItem="SIp-cJ-ayT" firstAttribute="top" secondItem="RCM-1y-5t1" secondAttribute="bottom" constant="10" id="liB-HD-Mne"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="cwM-HL-tlO"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="RCM-1y-5t1" id="ETk-6k-Mwk"/>
+                        <outlet property="loginButton" destination="SIp-cJ-ayT" id="oIJ-b2-MUp"/>
+                        <segue destination="d6y-hA-loy" kind="show" identifier="LoginToHomeSegue" id="JxA-jX-bd1"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PA1-Qj-RFN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1131" y="353"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="1xe-gd-B8f">
+            <objects>
+                <viewController id="d6y-hA-loy" customClass="ZPHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="idd-wp-K8H"/>
+                        <viewControllerLayoutGuide type="bottom" id="L9d-qh-oCL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5E2-MA-tKM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7a-K0-BD2">
+                                <rect key="frame" x="276" y="486" width="49" height="30"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="d6y-hA-loy" eventType="touchUpInside" id="z5U-07-iSo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L9d-qh-oCL" firstAttribute="top" secondItem="c7a-K0-BD2" secondAttribute="bottom" constant="40" id="PLf-8I-hnZ"/>
+                            <constraint firstAttribute="centerX" secondItem="c7a-K0-BD2" secondAttribute="centerX" id="nFG-pS-1WY"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="bHA-Wm-u6V">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="Yha-vX-0vu"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="VIR-fM-GfU"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="logoutButton" destination="c7a-K0-BD2" id="vO5-BF-R8z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F12-13-LtB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="353"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mEF-cM-get">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cA9-24-Fnp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qwX-JB-4gX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Muu-40-CaL" kind="relationship" relationship="rootViewController" id="gd8-dG-bde"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nm2-As-xnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457" y="353"/>
         </scene>
     </scenes>
 </document>
