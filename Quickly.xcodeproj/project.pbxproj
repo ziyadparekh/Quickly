@@ -19,6 +19,7 @@
 		48B4D9021A54714D00EC3D37 /* ZPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B4D9011A54714D00EC3D37 /* ZPConstants.m */; };
 		48B4D9051A547DF900EC3D37 /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B4D9031A547DF900EC3D37 /* Facebook.png */; };
 		48B4D9061A547DF900EC3D37 /* Facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B4D9041A547DF900EC3D37 /* Facebook@2x.png */; };
+		877BA7911A563C3C00AA0C96 /* ZPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877BA7901A563C3C00AA0C96 /* ZPTestViewController.m */; };
 		9892EBA8CF883EE9CABFD160 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F98BB51955343F6FE91CA62 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,8 @@
 		48B4D9041A547DF900EC3D37 /* Facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook@2x.png"; sourceTree = "<group>"; };
 		4F98BB51955343F6FE91CA62 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7058FE614137C3B7741F30D0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		877BA78F1A563C3C00AA0C96 /* ZPTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPTestViewController.h; sourceTree = "<group>"; };
+		877BA7901A563C3C00AA0C96 /* ZPTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPTestViewController.m; sourceTree = "<group>"; };
 		CA59976DD3E86E5354589766 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +111,7 @@
 		48B4D8CE1A5446A700EC3D37 /* Quickly */ = {
 			isa = PBXGroup;
 			children = (
+				877BA7921A56461000AA0C96 /* Test */,
 				48B4D8FC1A54522100EC3D37 /* Home */,
 				48B4D8F81A54511E00EC3D37 /* Login */,
 				48B4D8D31A5446A700EC3D37 /* AppDelegate.h */,
@@ -175,6 +179,15 @@
 				48B4D9041A547DF900EC3D37 /* Facebook@2x.png */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		877BA7921A56461000AA0C96 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				877BA78F1A563C3C00AA0C96 /* ZPTestViewController.h */,
+				877BA7901A563C3C00AA0C96 /* ZPTestViewController.m */,
+			);
+			name = Test;
 			sourceTree = "<group>";
 		};
 		AE6EB6B7AD9F6312B0696A21 /* Pods */ = {
@@ -325,6 +338,7 @@
 			files = (
 				48B4D8FB1A5451A200EC3D37 /* ZPLoginViewController.m in Sources */,
 				48B4D8D51A5446A700EC3D37 /* AppDelegate.m in Sources */,
+				877BA7911A563C3C00AA0C96 /* ZPTestViewController.m in Sources */,
 				48B4D8FF1A54523D00EC3D37 /* ZPHomeViewController.m in Sources */,
 				48B4D9021A54714D00EC3D37 /* ZPConstants.m in Sources */,
 				48B4D8D21A5446A700EC3D37 /* main.m in Sources */,
