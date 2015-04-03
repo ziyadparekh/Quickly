@@ -1,20 +1,20 @@
 //
-//  ZPHomeViewController.m
+//  ZPTestViewController.m
 //  Quickly
 //
-//  Created by Ziyad Parekh on 12/31/14.
-//  Copyright (c) 2014 Ziyad Parekh. All rights reserved.
+//  Created by Ziyad Parekh on 1/1/15.
+//  Copyright (c) 2015 Ziyad Parekh. All rights reserved.
 //
 
-#import "ZPHomeViewController.h"
-#import <Parse/Parse.h>
+#import "ZPTestViewController.h"
 
-@interface ZPHomeViewController ()
-@property (strong, nonatomic) IBOutlet UIButton *logoutButton;
+@interface ZPTestViewController ()
+- (IBAction)cancelBarButtonItemPressed:(UIBarButtonItem *)sender;
+
 
 @end
 
-@implementation ZPHomeViewController
+@implementation ZPTestViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,11 +24,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-- (IBAction)logoutButtonPressed:(UIButton *)sender
-{
-    [PFUser logOut];
-    [self.tabBarController dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*
@@ -41,4 +36,8 @@
 }
 */
 
+- (IBAction)cancelBarButtonItemPressed:(UIBarButtonItem *)sender
+{
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
 @end
