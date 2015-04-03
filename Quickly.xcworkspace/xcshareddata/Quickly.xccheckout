@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EF6807E0-8D8F-48E8-A9CA-5332F9F8B6A2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Quickly</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DE79F9723FCB2F9C19E0B83CBAF071B84D4CA1E2</key>
+		<string>https://github.com/ziyadparekh/Quickly.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Quickly.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DE79F9723FCB2F9C19E0B83CBAF071B84D4CA1E2</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ziyadparekh/Quickly.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DE79F9723FCB2F9C19E0B83CBAF071B84D4CA1E2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DE79F9723FCB2F9C19E0B83CBAF071B84D4CA1E2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Quickly</string>
+		</dict>
+	</array>
+</dict>
+</plist>
